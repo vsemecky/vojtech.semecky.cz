@@ -1,0 +1,62 @@
+---
+import Navigation from '../components/Navigation.astro';
+import SocialIcons from '../components/SocialIcons.astro';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'Vojtěch Semecký – osobní web' } = Astro.props;
+const fullTitle = title === 'Vojtěch Semecký' ? title : `${title} | Vojtěch Semecký`;
+---
+
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{fullTitle}</title>
+  <meta name="description" content={description} />
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/square.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <meta property="og:url" content="https://vojtech.semecky.cz/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content={fullTitle} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content="https://vojtech.semecky.cz/square.jpg" />
+
+  <!-- Google Tag Manager -->
+  <script is:inline>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MZLF78FF');
+  </script>
+</head>
+
+<body class="bg-gray-950 text-gray-100 font-sans min-h-screen flex flex-col">
+  <Navigation />
+
+  <main class="flex-1 max-w-3xl mx-auto px-4 w-full">
+    <slot />
+  </main>
+
+  <footer class="py-8 text-center text-sm text-gray-400">
+    <SocialIcons class="mb-4" />
+    <p>
+      <a href="mailto:vojtech@semecky.cz" class="hover:text-white transition-colors">
+        vojtech@semecky.cz
+      </a>
+    </p>
+  </footer>
+</body>
+</html>

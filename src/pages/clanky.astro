@@ -1,0 +1,80 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Parser from 'rss-parser';
+
+const parser = new Parser();
+
+const feeds = [
+  { url: 'https://varlog.cz/feed/', name: 'varlog.cz' },
+  { url: 'https://chang.cz/feed/', name: 'chang.cz' },
+  { url: 'https://varlog.info/feed/', name: 'varlog.info' },
+  { url: 'https://zdrojak.cz/autori/vojtech-semecky/feed/', name: 'zdrojak.cz' },
+];
+
+type Article = {
+  title: string;
+  link: string;
+  date: Date;
+  source: string;
+};
+
+const articles: Article[] = [];
+
+for (const feed of feeds) {
+  try {
+    const parsed = await parser.parseURL(feed.url);
+    for (const item of parsed.items) {
+      if (item.title && item.link) {
+        articles.push({
+          title: item.title,
+          link: item.link,
+          date: item.pubDate ? new Date(item.pubDate) : new Date(0),
+          source: feed.name,
+        });
+      }
+    }
+  } catch (e) {
+    console.warn(`Failed to fetch feed ${feed.url}:`, e);
+  }
+}
+
+articles.sort((a, b) => b.date.getTime() - a.date.getTime());
+
+const formatDate = (date: Date) => {
+  if (date.getTime() === 0) return '';
+  return date.toLocaleDateString('cs-CZ', { year: 'numeric', month: 'long', day: 'numeric' });
+};
+---
+
+<Layout title="Články" description="Články Vojtěcha Semeckého z různých blogů">
+  <div class="py-12">
+    <h1 class="text-3xl font-bold mb-8">Články</h1>
+
+    {articles.length === 0 ? (
+      <p class="text-gray-400">Nepodařilo se načíst žádné články.</p>
+    ) : (
+      <div class="space-y-6">
+        {articles.map(article => (
+          <article class="border-b border-gray-800 pb-6">
+            <a
+              href={article.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-lg font-medium hover:underline"
+            >
+              {article.title}
+            </a>
+            <div class="mt-1 text-sm text-gray-400">
+              {formatDate(article.date)}
+              {article.source && (
+                <span class="ml-2 px-2 py-0.5 bg-gray-800 rounded text-xs">
+                  {article.source}
+                </span>
+              )}
+            </div>
+          </article>
+        ))}
+      </div>
+    )}
+  </div>
+</Layout>

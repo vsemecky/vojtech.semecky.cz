@@ -1,0 +1,7 @@
+- name: "Testomato"
+  description: "Uptime monitoring and Website testing"
+  url: "https://www.testomato.com/"
+
+- name: "Placeholder projekt"
+  description: "Popis projektu"
+  url: ""

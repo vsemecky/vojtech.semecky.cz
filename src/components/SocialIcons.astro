@@ -1,0 +1,32 @@
+---
+import { Twitter, Linkedin, Youtube, Facebook, Instagram, Github } from '@lucide/astro';
+
+interface Props {
+  class?: string;
+}
+
+const { class: className = '' } = Astro.props;
+
+const socials = [
+  { href: 'https://twitter.com/varlog', label: 'Twitter', Icon: Twitter },
+  { href: 'https://cz.linkedin.com/in/vojtechsemecky', label: 'LinkedIn', Icon: Linkedin },
+  { href: 'https://www.youtube.com/user/changpictures', label: 'YouTube', Icon: Youtube },
+  { href: 'https://www.facebook.com/vojtechsemecky/', label: 'Facebook', Icon: Facebook },
+  { href: 'https://www.instagram.com/vsemecky/', label: 'Instagram', Icon: Instagram },
+  { href: 'https://github.com/vsemecky', label: 'GitHub', Icon: Github },
+];
+---
+
+<div class:list={['flex gap-4 justify-center', className]}>
+  {socials.map(({ href, label, Icon }) => (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      title={label}
+      class="text-gray-400 hover:text-white transition-colors"
+    >
+      <Icon size={32} />
+    </a>
+  ))}
+</div>

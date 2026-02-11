@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+import yaml from 'yaml';
+import { readFileSync } from 'fs';
+
+const projekty = yaml.parse(readFileSync('src/data/projekty.yaml', 'utf-8'));
+---
+
+<Layout title="Projekty" description="Projekty Vojtěcha Semeckého">
+  <div class="py-12">
+    <h1 class="text-3xl font-bold mb-8">Projekty</h1>
+
+    <div class="space-y-6">
+      {projekty.map((projekt: any) => (
+        <div class="border-b border-gray-800 pb-6">
+          {projekt.url ? (
+            <a href={projekt.url} target="_blank" rel="noopener noreferrer" class="text-lg font-medium hover:underline">
+              {projekt.name}
+            </a>
+          ) : (
+            <span class="text-lg font-medium">{projekt.name}</span>
+          )}
+          {projekt.description && (
+            <p class="text-sm text-gray-400 mt-1">{projekt.description}</p>
+          )}
+        </div>
+      ))}
+    </div>
+  </div>
+</Layout>

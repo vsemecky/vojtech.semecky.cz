@@ -1,0 +1,33 @@
+---
+const currentPath = Astro.url.pathname;
+
+const links = [
+  { href: '/', label: 'Domů' },
+  { href: '/clanky/', label: 'Články' },
+  { href: '/kapely/', label: 'Kapely' },
+  { href: '/projekty/', label: 'Projekty' },
+];
+---
+
+<nav class="py-4">
+  <div class="max-w-3xl mx-auto px-4 flex items-center justify-between">
+    <a href="/" class="text-lg font-bold text-white hover:text-gray-300 transition-colors">
+      VS
+    </a>
+    <div class="flex items-center gap-6">
+      {links.map(link => (
+        <a
+          href={link.href}
+          class:list={[
+            'text-sm transition-colors',
+            currentPath === link.href
+              ? 'text-white font-medium'
+              : 'text-gray-400 hover:text-white',
+          ]}
+        >
+          {link.label}
+        </a>
+      ))}
+    </div>
+  </div>
+</nav>

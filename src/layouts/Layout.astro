@@ -6,10 +6,18 @@ import '../styles/global.css';
 interface Props {
   title: string;
   description?: string;
+  jsonLd?: Record<string, unknown>;
 }
 
-const { title, description = 'Vojtěch Semecký – osobní web' } = Astro.props;
+const { title, description = 'Vojtěch Semecký – osobní web', jsonLd } = Astro.props;
 const fullTitle = title === 'Vojtěch Semecký' ? title : `${title} | Vojtěch Semecký`;
+
+const websiteJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Vojtěch Semecký',
+  url: 'https://vojtech.semecky.cz/',
+};
 ---
 
 <!doctype html>
@@ -32,6 +40,9 @@ const fullTitle = title === 'Vojtěch Semecký' ? title : `${title} | Vojtěch S
   <meta property="og:title" content={fullTitle} />
   <meta property="og:description" content={description} />
   <meta property="og:image" content="https://vojtech.semecky.cz/square.jpg" />
+
+  <script type="application/ld+json" set:html={JSON.stringify(websiteJsonLd)} />
+  {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
 
   <!-- Google Tag Manager -->
   <script is:inline>

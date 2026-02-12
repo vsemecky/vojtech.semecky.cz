@@ -1,8 +1,30 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+const personJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Vojtěch Semecký',
+  url: 'https://vojtech.semecky.cz/',
+  image: 'https://vojtech.semecky.cz/square.jpg',
+  jobTitle: 'Co-owner & Product Developer',
+  worksFor: {
+    '@type': 'Organization',
+    name: 'Testomato',
+    url: 'https://www.testomato.com/',
+  },
+  sameAs: [
+    'https://twitter.com/varlog',
+    'https://cz.linkedin.com/in/vojtechsemecky',
+    'https://www.youtube.com/user/changpictures',
+    'https://www.facebook.com/vojtechsemecky/',
+    'https://www.instagram.com/vsemecky/',
+    'https://github.com/vsemecky',
+  ],
+};
 ---
 
-<Layout title="Vojtěch Semecký" description="Vojtěch Semecký – co-owner & product developer at Testomato.com">
+<Layout title="Vojtěch Semecký" description="Vojtěch Semecký – co-owner & product developer at Testomato.com" jsonLd={personJsonLd}>
   <div class="flex flex-col items-center justify-center py-20 text-center">
     <img
       src="/square.jpg"

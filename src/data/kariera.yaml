@@ -1,0 +1,78 @@
+summary: "Senior PHP Developer & Software Architect with 20+ years of experience building and refactoring large-scale web and e-commerce platforms. Strong expertise in PHP8, MySQL, Sphinx Search, Redis. Proven track record in designing sustainable, maintainable systems (Ticketstream, LMC, Testomato) and leading teams through agile practices (Scrum Master, code reviews, continuous integration). Focused on long-term scalability, performance, and clean code culture."
+
+skills:
+  - PHP
+  - MySQL
+  - Sphinx
+
+experience:
+  - company: Testomato
+    role: Co-owner & Product Developer
+    from: "2019-01"
+    to: null
+    location: Prague
+    description: "Development in PHP8, MySQL, Redis, GitLab, Docker. Návrh a údržba škálovatelné architektury SaaS aplikace pro monitoring webů."
+
+  - company: Ticketstream s.r.o.
+    role: Software Architect
+    from: "2016-11"
+    to: "2018-10"
+    location: Prague
+    description: "I was responsible for the complete redesign and refactoring of a 15-year-old ticketing system that was barely maintainable. The goal was to create a modern, scalable, and sustainable architecture. While keeping the application fully operational, I gradually rewrote and replaced legacy components with new ones, ensuring continuous service without disruptions."
+
+  - company: LMC
+    role: Senior PHP Developer & Scrum master
+    from: "2013-03"
+    to: "2016-04"
+    location: Prague
+    description: "As a Scrum Master and Software Architect, I facilitated daily stand-ups, introduced and maintained planning poker sessions for effort estimation, and led retrospectives to support continuous improvement. I helped the team stay focused on sprint goals and provided architectural guidance to ensure technical consistency and long-term maintainability of the product."
+    technologies: "PHP, MySQL, Git, Sphinx, Scrum, Agile"
+
+  - company: Wikidi
+    role: Senior Product Developer
+    from: "2011-01"
+    to: "2013-03"
+    location: Prague
+    description: "Product management of Tech-specs.com. Product development of Kinohled.cz. Participation in job interviews."
+
+  - company: Jyxo
+    role: Web Developer
+    from: "2009-10"
+    to: "2011-01"
+    location: Prague
+
+  - company: LMC s.r.o.
+    role: Product manager of Jobs.cz & Prace.cz
+    from: "2009-01"
+    to: "2009-09"
+    location: Prague
+    description: "Leader of the selection procedure to find a solution to replace and consolidate all the search technologies in the LMC. Temporary contract."
+
+  - company: Centrum Holdings, a.s.
+    role: Web Developer
+    from: "2008-05"
+    to: "2008-12"
+    location: Prague
+    description: "I developed and maintained the advertising system and business directory for the Centrum.cz portal. My work involved backend and frontend development to support high-traffic services, with a focus on performance, reliability, and integration with other parts of the platform."
+
+  - company: Raiffeisenbank a.s.
+    role: IT Project Coordinator
+    from: "2006-05"
+    to: "2008-05"
+    location: Prague
+    description: "IT coordinator in a wide variety of Lotus Notes business applications."
+
+  - company: eBanka, a.s.
+    role: Lotus Notes & Intranet Developer
+    from: "2004-03"
+    to: "2006-04"
+    location: Prague
+    description: "Intranet developer, Lotus Notes, Lotus Script, Intranet."
+
+  - company: PricewaterhouseCoopers
+    role: Human Resources Consultant
+    from: "2001-09"
+    to: "2004-02"
+    location: Prague
+    description: "Consultant in Global Human Resources Services. Participation in processing of PayWell survey."
+    technologies: "Lotus Notes, MS Access, SPSS"

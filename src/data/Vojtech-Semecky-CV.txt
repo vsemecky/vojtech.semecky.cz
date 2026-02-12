@@ -1,0 +1,143 @@
+vojtech@semecky.cz
+
+Vojtěch Semecký
+
+www.linkedin.com/in/
+vojtechsemecky (LinkedIn)
+www.testomato.com (Company)
+www.varlog.cz (Blog)
+konfery.cz/ (Portfolio)
+
+Summary
+
+Contact
+
+Top Skills
+PHP
+MySQL
+Sphinx
+
+Certifications
+Základy pro svět prezentací (Lukáš
+Hrdlička)
+
+Senior PHP Developer & Software Architect | Co-owner @
+Testomato
+Prague, Czechia
+
+Senior PHP Developer & Software Architect with 20+ years
+of experience building and refactoring large-scale web and ecommerce platforms. Strong expertise in PHP8, MySQL, Sphinx
+Search, Redis. Proven track record in designing sustainable,
+maintainable systems (Ticketstream, LMC, Testomato) and
+leading teams through agile practices (Scrum Master, code
+reviews, continuous integration). Focused on long-term scalability,
+performance, and clean code culture.
+
+Projektové řízení krok za krokem
+(Jiří Krátký)
+Začínáme s Sklikem
+Obchodní myšlení (Jan Laibl)
+Facebook reklama
+
+Publications
+Introduction to Sphinx Search (4
+articles)
+
+Experience
+Testomato
+Co-owner & Product Developer
+
+January 2019 - Present (7 years 2 months)
+Prague, The Capital, Czech Republic
+Development in PHP8, MySQL, Redis, GitLab, Docker. Návrh a údržba
+
+Sdílená kancelář Punspace v Chiang
+Mai – Thajsko
+
+škálovatelné architektury SaaS aplikace pro monitoring webů.
+
+Jak se pracuje z tropického ostrova v
+Thajsku?
+
+Ticketstream s.r.o.
+Software Architect
+
+November 2016 - October 2018 (2 years)
+Prague, The Capital, Czech Republic
+I was responsible for the complete redesign and refactoring of a 15-yearold ticketing system that was barely maintainable. The goal was to create a
+modern, scalable, and sustainable architecture. While keeping the application
+fully operational, I gradually rewrote and replaced legacy components with new
+ones, ensuring continuous service without disruptions.
+
+LMC
+Senior PHP Developer & Scrum master
+
+March 2013 - April 2016 (3 years 2 months)
+Prague
+
+Page 1 of 3
+
+As a Scrum Master and Software Architect, I facilitated daily stand-ups,
+introduced and maintained planning poker sessions for effort estimation, and
+led retrospectives to support continuous improvement. I helped the team
+stay focused on sprint goals and provided architectural guidance to ensure
+technical consistency and long-term maintainability of the product.
+Technologies: PHP, MySQL, Git, Sphinx, Scrum, Agile
+
+Wikidi
+Senior Product Developer
+
+January 2011 - March 2013 (2 years 3 months)
+Prague, The Capital, Czech Republic
+- Product management of Tech-specs.com
+- Product development of Kinohled.cz
+- Participation in job interviews
+
+Jyxo
+Web Developer
+
+October 2009 - January 2011 (1 year 4 months)
+
+LMC s.r.o.
+Product manager of Jobs.cz & Prace.cz
+
+January 2009 - September 2009 (9 months)
+Leader of the selection procedure to find a solution to replace and consolidate
+all the search technologies in the LMC. Temporary contract.
+
+Centrum Holdings, a.s.
+Web Developer
+
+May 2008 - December 2008 (8 months)
+I developed and maintained the advertising system and business directory for
+the Centrum.cz portal. My work involved backend and frontend development
+to support high-traffic services, with a focus on performance, reliability, and
+integration with other parts of the platform.
+
+Raiffeisenbank a.s.
+IT Project Coordinator
+
+May 2006 - May 2008 (2 years 1 month)
+Prague
+IT coordinator in a wide variety of Lotus Notes business applications.
+
+Page 2 of 3
+
+eBanka, a.s.
+Lotus Notes & Intranet Developer
+
+March 2004 - April 2006 (2 years 2 months)
+Intranet developer, Lotus Notes, Lotus Script, Intranet
+
+PricewaterhouseCoopers
+Human Resources Consultant
+
+September 2001 - February 2004 (2 years 6 months)
+Prague, The Capital, Czech Republic
+* Consultant in Global Human Resources Services
+* Participation in processing of PayWell survey
+* Technologies: Lotus Notes, MS Access, SPSS
+
+Page 3 of 3
+
+

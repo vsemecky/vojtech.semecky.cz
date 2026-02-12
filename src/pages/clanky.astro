@@ -40,9 +40,16 @@ for (const feed of feeds) {
 
 articles.sort((a, b) => b.date.getTime() - a.date.getTime());
 
+const articlesByYear = new Map<number, Article[]>();
+for (const article of articles) {
+  const year = article.date.getFullYear() || 0;
+  if (!articlesByYear.has(year)) articlesByYear.set(year, []);
+  articlesByYear.get(year)!.push(article);
+}
+
 const formatDate = (date: Date) => {
   if (date.getTime() === 0) return '';
-  return date.toLocaleDateString('cs-CZ', { year: 'numeric', month: 'long', day: 'numeric' });
+  return date.toLocaleDateString('cs-CZ', { month: 'long', day: 'numeric' });
 };
 ---
 
@@ -53,26 +60,33 @@ const formatDate = (date: Date) => {
     {articles.length === 0 ? (
       <p class="text-gray-400">Nepodařilo se načíst žádné články.</p>
     ) : (
-      <div class="space-y-6">
-        {articles.map(article => (
-          <article class="border-b border-gray-800 pb-6">
-            <a
-              href={article.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-lg font-medium hover:underline"
-            >
-              {article.title}
-            </a>
-            <div class="mt-1 text-sm text-gray-400">
-              {formatDate(article.date)}
-              {article.source && (
-                <span class="ml-2 px-2 py-0.5 bg-gray-800 rounded text-xs">
-                  {article.source}
-                </span>
-              )}
+      <div class="space-y-10">
+        {[...articlesByYear.entries()].map(([year, yearArticles]) => (
+          <section>
+            <h2 class="text-xl font-semibold mb-4 text-gray-300">{year || 'Bez data'}</h2>
+            <div class="space-y-4">
+              {yearArticles.map(article => (
+                <article class="border-b border-gray-800 pb-4">
+                  <a
+                    href={article.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-lg font-medium hover:underline"
+                  >
+                    {article.title}
+                  </a>
+                  <div class="mt-1 text-sm text-gray-400">
+                    {formatDate(article.date)}
+                    {article.source && (
+                      <span class="ml-2 px-2 py-0.5 bg-gray-800 rounded text-xs">
+                        {article.source}
+                      </span>
+                    )}
+                  </div>
+                </article>
+              ))}
             </div>
-          </article>
+          </section>
         ))}
       </div>
     )}

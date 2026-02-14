@@ -3,11 +3,11 @@
   url: "https://www.testomato.com/"
 
 - name: "This Beach Does Not Exist"
-  description: "AI-generated beach images"
+  description: "AI-generované obrázky pláží"
   url: "https://thisbeachdoesnotexist.com/"
 
 - name: "Varlog.info"
-  description: "Varování před blokacemi a uzavírkami"
+  description: "Informace o uzavírkách a dopravních omezeních"
   url: "https://varlog.info/"
 
 - name: "Konfery"
@@ -15,7 +15,7 @@
   url: "https://konfery.cz/"
 
 - name: "Varlog.cz"
-  description: "Varování před uzavírkami"
+  description: "Varování před uzavírkami silnic"
   url: "https://www.varlog.cz/"
 
 - name: "Chang.cz"

@@ -1,5 +1,5 @@
 - name: "Testomato"
-  description: "Testomato is an website monitoring service, which checks your website functionality in real time and alerts you when something goes wrong."
+  description: "Testomato is a website monitoring service, which checks your website functionality in real time and alerts you when something goes wrong."
   url: "https://www.testomato.com/"
 
 - name: "This Beach Does Not Exist"
@@ -19,7 +19,7 @@
   url: "https://www.varlog.cz/"
 
 - name: "Chang.cz"
-  description: "Thajsko - Chang.cz - Cestopisy z Thajska na základě osobních zkušeností. Kdy jet na dovolenou do Thajska? Co v Thajsku podniknout? jak do Thajska bez cestovky?"
+  description: "Thajsko - Chang.cz - Cestopisy z Thajska na základě osobních zkušeností. Kdy jet na dovolenou do Thajska? Co v Thajsku podniknout? Jak do Thajska bez cestovky?"
   url: "https://www.chang.cz/"
 
 - name: "Svatkonos"

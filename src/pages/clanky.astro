@@ -31,7 +31,7 @@ for (const feed of feeds) {
           link: item.link,
           date: item.pubDate ? new Date(item.pubDate) : new Date(0),
           source: feed.name,
-          description: item.contentSnippet || item.description || undefined,
+          description: item.contentSnippet || item.description,
         });
       }
     }

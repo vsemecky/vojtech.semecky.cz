@@ -1,31 +1,31 @@
 - name: "Testomato"
-  description: "Uptime monitoring and Website testing"
+  description: "Testomato is an website monitoring service, which checks your website functionality in real time and alerts you when something goes wrong."
   url: "https://www.testomato.com/"
 
 - name: "This Beach Does Not Exist"
-  description: "AI-generované obrázky pláží"
+  description: "This Beach Does Not Exist uses advanced AI (StyleGAN2-ADA) to generate unique, high-resolution beach images."
   url: "https://thisbeachdoesnotexist.com/"
 
 - name: "Varlog.info"
-  description: "Informace o uzavírkách a dopravních omezeních"
+  description: "O vývoji webových aplikací, podnikání na internetu a životě digitálního nomáda píše Vojtěch Semecký."
   url: "https://varlog.info/"
 
 - name: "Konfery"
-  description: "Technologické konference v České republice"
+  description: "Konfery.cz – přehled nejbližších konferencí, meetupů, barcampů a srazů."
   url: "https://konfery.cz/"
 
 - name: "Varlog.cz"
-  description: "Varování před uzavírkami silnic"
+  description: "O vývoji webových aplikací a podnikání na Internetu píše Vojtěch Semecký."
   url: "https://www.varlog.cz/"
 
 - name: "Chang.cz"
-  description: "Restaurace Chang"
+  description: "Thajsko - Chang.cz - Cestopisy z Thajska na základě osobních zkušeností. Kdy jet na dovolenou do Thajska? Co v Thajsku podniknout? jak do Thajska bez cestovky?"
   url: "https://www.chang.cz/"
 
 - name: "Svatkonos"
-  description: "Svatební agentura"
+  description: "Přehled svátků v ČR. Kdo má dnes svátek? Kdo má svátek zítra? Najděte svátek podle jména, státní svátky nebo třeba svátky vánoční."
   url: "https://www.svatkonos.cz/"
 
 - name: "Potiskni tričko"
-  description: "Potisk triček a textilu"
+  description: "Vytvořte si tričko s vlastním originálním potiskem! Kromě triček nabízíme k vlastnímu potisku také různé fotodárky (hrnky, polštáře, puzzle, podložky pod myš...)"
   url: "https://www.potisknatricko.cz/"

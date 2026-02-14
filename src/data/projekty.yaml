@@ -2,6 +2,30 @@
   description: "Uptime monitoring and Website testing"
   url: "https://www.testomato.com/"
 
-- name: "Placeholder projekt"
-  description: "Popis projektu"
-  url: ""
+- name: "This Beach Does Not Exist"
+  description: "AI-generated beach images"
+  url: "https://thisbeachdoesnotexist.com/"
+
+- name: "Varlog.info"
+  description: "Varování před blokacemi a uzavírkami"
+  url: "https://varlog.info/"
+
+- name: "Konfery"
+  description: "Technologické konference v České republice"
+  url: "https://konfery.cz/"
+
+- name: "Varlog.cz"
+  description: "Varování před uzavírkami"
+  url: "https://www.varlog.cz/"
+
+- name: "Chang.cz"
+  description: "Restaurace Chang"
+  url: "https://www.chang.cz/"
+
+- name: "Svatkonos"
+  description: "Svatební agentura"
+  url: "https://www.svatkonos.cz/"
+
+- name: "Potiskni tričko"
+  description: "Potisk triček a textilu"
+  url: "https://www.potisknatricko.cz/"

@@ -4,6 +4,11 @@ import yaml from 'yaml';
 import { readFileSync } from 'fs';
 
 const projekty = yaml.parse(readFileSync('src/data/projekty.yaml', 'utf-8'));
+
+// Generate favicon URL from project URL
+function getFaviconUrl(url: string): string {
+  return `https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${encodeURIComponent(url)}&size=128`;
+}
 ---
 
 <Layout title="Projekty" description="Projekty Vojtěcha Semeckého">
@@ -12,17 +17,26 @@ const projekty = yaml.parse(readFileSync('src/data/projekty.yaml', 'utf-8'));
 
     <div class="space-y-6">
       {projekty.map((projekt: any) => (
-        <div class="border-b border-gray-800 pb-6">
-          {projekt.url ? (
-            <a href={projekt.url} target="_blank" rel="noopener noreferrer" class="text-lg font-medium hover:underline">
-              {projekt.name}
-            </a>
-          ) : (
-            <span class="text-lg font-medium">{projekt.name}</span>
+        <div class="border-b border-gray-800 pb-6 flex items-start gap-3">
+          {projekt.url && (
+            <img 
+              src={getFaviconUrl(projekt.url)} 
+              alt={`${projekt.name} favicon`}
+              class="w-6 h-6 mt-0.5 flex-shrink-0"
+            />
           )}
-          {projekt.description && (
-            <p class="text-sm text-gray-400 mt-1">{projekt.description}</p>
-          )}
+          <div class="flex-1">
+            {projekt.url ? (
+              <a href={projekt.url} target="_blank" rel="noopener noreferrer" class="text-lg font-medium hover:underline">
+                {projekt.name}
+              </a>
+            ) : (
+              <span class="text-lg font-medium">{projekt.name}</span>
+            )}
+            {projekt.description && (
+              <p class="text-sm text-gray-400 mt-1">{projekt.description}</p>
+            )}
+          </div>
         </div>
       ))}
     </div>

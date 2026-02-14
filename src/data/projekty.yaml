@@ -1,8 +1,8 @@
-- name: "Testomato"
+- name: "Testomato.com"
   description: "Testomato is a website monitoring service, which checks your website functionality in real time and alerts you when something goes wrong."
   url: "https://www.testomato.com/"
 
-- name: "This Beach Does Not Exist"
+- name: "ThisBeachDoesNotExist.com"
   description: "This Beach Does Not Exist uses advanced AI (StyleGAN2-ADA) to generate unique, high-resolution beach images."
   url: "https://thisbeachdoesnotexist.com/"
 
@@ -10,7 +10,7 @@
   description: "O vývoji webových aplikací, podnikání na internetu a životě digitálního nomáda píše Vojtěch Semecký."
   url: "https://varlog.info/"
 
-- name: "Konfery"
+- name: "Konfery.cz"
   description: "Konfery.cz – přehled nejbližších konferencí, meetupů, barcampů a srazů."
   url: "https://konfery.cz/"
 
@@ -22,10 +22,10 @@
   description: "Thajsko - Chang.cz - Cestopisy z Thajska na základě osobních zkušeností. Kdy jet na dovolenou do Thajska? Co v Thajsku podniknout? Jak do Thajska bez cestovky?"
   url: "https://www.chang.cz/"
 
-- name: "Svatkonos"
+- name: "Svatkonos.cz"
   description: "Přehled svátků v ČR. Kdo má dnes svátek? Kdo má svátek zítra? Najděte svátek podle jména, státní svátky nebo třeba svátky vánoční."
   url: "https://www.svatkonos.cz/"
 
-- name: "Potiskni tričko"
+- name: "Potisknatricko.cz"
   description: "Vytvořte si tričko s vlastním originálním potiskem! Kromě triček nabízíme k vlastnímu potisku také různé fotodárky (hrnky, polštáře, puzzle, podložky pod myš...)"
   url: "https://www.potisknatricko.cz/"
